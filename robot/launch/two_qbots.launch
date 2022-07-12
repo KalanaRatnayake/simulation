@@ -1,0 +1,19 @@
+<launch>
+
+    <!-- BEGIN ROBOT 1-->
+    <group ns="qbot1">
+        <include file="$(find robot)/launch/single_qbot.launch" >
+            <arg name="init_pose" value="-x 0.5 -y 7.5 -z 0 -R 0 -P 0 -Y 0" />
+            <arg name="tf_prefix" value="qbot1"/>
+        </include>
+    </group>
+
+    <!-- BEGIN ROBOT 2-->
+    <group ns="qbot2">
+        <include file="$(find robot)/launch/single_qbot.launch" >
+            <arg name="init_pose" value="-x 0.5 -y 2.5 -z 0 -R 0 -P 0 -Y 0" />
+            <arg name="tf_prefix" value="qbot2"/>
+        </include>
+    </group>
+
+</launch>

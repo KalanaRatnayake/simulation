@@ -1,0 +1,7 @@
+<launch>
+    <!-- start world -->
+    <include file="$(find world)/launch/large_arena.launch" />
+
+    <!-- include the robots -->
+    <include file="$(find robot)/launch/two_qbots.launch" />
+</launch>
